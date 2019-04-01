@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A6C124632E7EF688F3ED491F /* Pods_instagramFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7884EBBA2CC1292AFBEE6849 /* Pods_instagramFirebase.framework */; };
+		CE9B6CF622520DB800AD995C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B6CF522520DB800AD995C /* MainTabBarController.swift */; };
+		CE9B6CF822520E6E00AD995C /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B6CF722520E6E00AD995C /* UserProfileController.swift */; };
+		CE9B6CFA2252146300AD995C /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B6CF92252146300AD995C /* UserProfileHeader.swift */; };
 		CE9F157B2250FE9900EFC7E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F157A2250FE9900EFC7E3 /* AppDelegate.swift */; };
 		CE9F157D2250FE9900EFC7E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F157C2250FE9900EFC7E3 /* ViewController.swift */; };
 		CE9F15802250FE9900EFC7E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9F157E2250FE9900EFC7E3 /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 		2A9FC07D442BA5D37F7BE66E /* Pods-instagramFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramFirebase.debug.xcconfig"; path = "Target Support Files/Pods-instagramFirebase/Pods-instagramFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		7884EBBA2CC1292AFBEE6849 /* Pods_instagramFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagramFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F41F4288506A97B3DFD38A /* Pods-instagramFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramFirebase.release.xcconfig"; path = "Target Support Files/Pods-instagramFirebase/Pods-instagramFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		CE9B6CF522520DB800AD995C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		CE9B6CF722520E6E00AD995C /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
+		CE9B6CF92252146300AD995C /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 		CE9F15772250FE9900EFC7E3 /* instagramFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagramFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9F157A2250FE9900EFC7E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9F157C2250FE9900EFC7E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +64,6 @@
 				2A9FC07D442BA5D37F7BE66E /* Pods-instagramFirebase.debug.xcconfig */,
 				B4F41F4288506A97B3DFD38A /* Pods-instagramFirebase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,6 +96,9 @@
 				CE9F15832250FE9B00EFC7E3 /* LaunchScreen.storyboard */,
 				CE9F15862250FE9B00EFC7E3 /* Info.plist */,
 				CE9F158F22510B5D00EFC7E3 /* GoogleService-Info.plist */,
+				CE9B6CF522520DB800AD995C /* MainTabBarController.swift */,
+				CE9B6CF722520E6E00AD995C /* UserProfileController.swift */,
+				CE9B6CF92252146300AD995C /* UserProfileHeader.swift */,
 			);
 			path = instagramFirebase;
 			sourceTree = "<group>";
@@ -230,8 +238,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9B6CF622520DB800AD995C /* MainTabBarController.swift in Sources */,
 				CE9F157D2250FE9900EFC7E3 /* ViewController.swift in Sources */,
 				CE9F158E2251067800EFC7E3 /* Extensions.swift in Sources */,
+				CE9B6CF822520E6E00AD995C /* UserProfileController.swift in Sources */,
+				CE9B6CFA2252146300AD995C /* UserProfileHeader.swift in Sources */,
 				CE9F157B2250FE9900EFC7E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
