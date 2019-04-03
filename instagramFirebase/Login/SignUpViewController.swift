@@ -26,6 +26,25 @@ class SingUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         present(imagePickerController, animated: true, completion: nil)
     }
+
+    var alreadyHaveAccountButton: UIButton = {
+        let button = UIButton(type: .system)
+
+        let attributedTitle = NSMutableAttributedString(string: "Already have an account?  ", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+
+        attributedTitle.append(NSAttributedString(string: "Login", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14),
+                                                                                  NSAttributedString.Key.foregroundColor: UIColor.rgb(red: 17, green: 154, blue: 237)]))
+        button.setAttributedTitle(attributedTitle, for: .normal)
+
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(handleAlreadyHaveAccount), for: .touchUpInside)
+        return button
+    }()
+
+    @objc func handleAlreadyHaveAccount() {
+        print("go to login")
+        navigationController?.popViewController(animated: true)
+    }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let editedImage = info[.editedImage] as? UIImage
@@ -166,6 +185,9 @@ class SingUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
+
+        view.addSubview(alreadyHaveAccountButton)
+        alreadyHaveAccountButton.anchor(top: nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
         
         view.addSubview(plusPhotoButton)
         
