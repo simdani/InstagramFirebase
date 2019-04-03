@@ -10,7 +10,7 @@ import UIKit
 
 import Firebase
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SingUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     let plusPhotoButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(#imageLiteral(resourceName: "plus_photo").withRenderingMode(.alwaysOriginal), for: .normal)
@@ -165,6 +165,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        view.backgroundColor = .white
         
         view.addSubview(plusPhotoButton)
         
