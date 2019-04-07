@@ -19,6 +19,7 @@
 		CE9F158E2251067800EFC7E3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F158D2251067800EFC7E3 /* Extensions.swift */; };
 		CE9F159022510B5D00EFC7E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE9F158F22510B5D00EFC7E3 /* GoogleService-Info.plist */; };
 		CEB3F0352253D70F00B2E485 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3F0342253D70F00B2E485 /* LoginViewController.swift */; };
+		CEB5567F225A791A000C2CA8 /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5567E225A791A000C2CA8 /* PhotoSelectorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		CE9F158D2251067800EFC7E3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CE9F158F22510B5D00EFC7E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEB3F0342253D70F00B2E485 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CEB5567E225A791A000C2CA8 /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,8 @@
 		CE9F15792250FE9900EFC7E3 /* instagramFirebase */ = {
 			isa = PBXGroup;
 			children = (
-				CEB3F0332253D6FA00B2E485 /* Login */,
+				CEB5567D225A7841000C2CA8 /* View */,
+				CEB5567C225A781A000C2CA8 /* ViewControllers */,
 				CE9F158C2251066C00EFC7E3 /* Utils */,
 				CE9F157A2250FE9900EFC7E3 /* AppDelegate.swift */,
 				CE9F157E2250FE9900EFC7E3 /* Main.storyboard */,
@@ -98,9 +101,6 @@
 				CE9F15832250FE9B00EFC7E3 /* LaunchScreen.storyboard */,
 				CE9F15862250FE9B00EFC7E3 /* Info.plist */,
 				CE9F158F22510B5D00EFC7E3 /* GoogleService-Info.plist */,
-				CE9B6CF522520DB800AD995C /* MainTabBarController.swift */,
-				CE9B6CF722520E6E00AD995C /* UserProfileController.swift */,
-				CE9B6CF92252146300AD995C /* UserProfileHeader.swift */,
 			);
 			path = instagramFirebase;
 			sourceTree = "<group>";
@@ -120,6 +120,25 @@
 				CEB3F0342253D70F00B2E485 /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		CEB5567C225A781A000C2CA8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B6CF522520DB800AD995C /* MainTabBarController.swift */,
+				CE9B6CF722520E6E00AD995C /* UserProfileController.swift */,
+				CEB3F0332253D6FA00B2E485 /* Login */,
+				CEB5567E225A791A000C2CA8 /* PhotoSelectorController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CEB5567D225A7841000C2CA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B6CF92252146300AD995C /* UserProfileHeader.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +275,7 @@
 				CE9B6CF822520E6E00AD995C /* UserProfileController.swift in Sources */,
 				CE9B6CFA2252146300AD995C /* UserProfileHeader.swift in Sources */,
 				CE9F157B2250FE9900EFC7E3 /* AppDelegate.swift in Sources */,
+				CEB5567F225A791A000C2CA8 /* PhotoSelectorController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
